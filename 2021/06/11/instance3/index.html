@@ -54,6 +54,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   
   
+    <link rel="stylesheet" id="darkmode-css" href="/TyWarm/css/kr-dark.min.css" type="text/css" media="all">
+  
   <!-- 不得不预先加载的一些JS文件 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   
@@ -534,6 +536,10 @@
                     </div>
                 
                 
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
                 
             </div>
             <div class="box gotop-box">
@@ -577,6 +583,11 @@
 <script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 <script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script>
 
+    <div>
+        <canvas id="snow"></canvas>
+        <script async type="text/javascript" src="/TyWarm/js/snow.min.js"></script>
+    </div>
+
 <script async src="/TyWarm/js/candy.min.js"></script>
 
 
@@ -586,6 +597,8 @@
 <script defer src="/TyWarm/js/kratosr.min.js"></script>
 <script defer src="/TyWarm/js/pjax.min.js"></script>
 
+
+    <script defer src="/TyWarm/js/kr-dark.min.js"></script>
 
 
 

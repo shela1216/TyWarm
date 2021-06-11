@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   
   
+    <link rel="stylesheet" id="darkmode-css" href="/TyWarm/css/kr-dark.min.css" type="text/css" media="all">
+  
   <!-- 不得不预先加载的一些JS文件 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   
@@ -152,57 +154,58 @@
     
         
         
-            <article class="kratos-hentry clearfix">
-                <div class="kratos-entry-border-new clearfix">
-                    
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
 
-                    <div class="kratos-post-inner-new">
-                        <header class="kratos-entry-header-new">
-                                <a class="label-link" href="/TyWarm/categories/%E8%81%B7%E6%A5%AD%E6%94%BB%E7%95%A5/">職業攻略</a>
-                            <h2 class="kratos-entry-title-new"><a href="/TyWarm/2021/06/10/work_5/">流光 | 魂寂斷死生，可輔助可輸出！培養介紹</a>
-                        </header>
-                        <div class="kratos-entry-content-new">
-                            <p>
-                                
-                                    PVP中流光寂滅系擁有全職業中最多的控製手段，禁錮、沉默、定身、暈眩一應俱全，這些搭配起來可以讓敵人在持續被控中斃命。衍光系技能的回復效果可以保證流光在戰鬥中的回复，在1V1中輕鬆取勝。
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <footer class="kratos-post-meta-new">
-                        <span class="pull-left">
-                            <a>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/TyWarm/2021/06/10/work_5/">流光 | 魂寂斷死生，可輔助可輸出！培養介紹</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
                                 <i class="fa fa-calendar"></i>
                                 2021-06-10
-                            </a>
-                            <a>
-                                
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分類於
+                                    <a class="label-link" href="/TyWarm/categories/%E8%81%B7%E6%A5%AD%E6%94%BB%E7%95%A5/">職業攻略</a>
+                                </li>
+                            
+                            
+                                <li>
                                     <i class="fa fa-tags"></i>
                                     <a class="tag-none-link" href="/TyWarm/tags/%E6%8E%A7%E5%A0%B4/" rel="tag">控場</a>, <a class="tag-none-link" href="/TyWarm/tags/%E6%B5%81%E5%85%89/" rel="tag">流光</a>, <a class="tag-none-link" href="/TyWarm/tags/%E8%81%B7%E6%A5%AD%E4%BB%8B%E7%B4%B9/" rel="tag">職業介紹</a>
-                                
-                            </a>
+                                </li>
+                            
                             
                                 <!-- 当前仅支持valine/waline自带的统计功能 -->
                                 
-                                    <a id="/TyWarm/2021/06/10/work_5/" class="leancloud_visitors" data-flag-title="流光 | 魂寂斷死生，可輔助可輸出！培養介紹">
+                                    <li id="/TyWarm/2021/06/10/work_5/" class="leancloud_visitors" data-flag-title="流光 | 魂寂斷死生，可輔助可輸出！培養介紹">
                                         <i class="fa fa-eye"></i>
                                         <span class="leancloud-visitors-count"> </span> 次閱讀
-                                    </a>
+                                    </li>
                                 
                             
                             
                                 <!-- 当前仅支持waline自带的统计功能 -->
                                 
-                                    <a>
+                                    <li>
                                         <i class="fa fa-commenting-o"></i>
                                         <span data-xid="/TyWarm/2021/06/10/work_5/" class="waline-comment-count"> </span> 條評論
-                                    </a>
+                                    </li>
                                 
                             
-                        </span>
-                        <span class="pull-right">
-                            <a class="read-more" href="/TyWarm/2021/06/10/work_5/" title="閱讀全文">閱讀全文<i class="fa fa-chevron-circle-right"></i></a>
-                        </span>
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <p>PVP中流光寂滅系擁有全職業中最多的控製手段，禁錮、沉默、定身、暈眩一應俱全，這些搭配起來可以讓敵人在持續被控中斃命。衍光系技能的回復效果可以保證流光在戰鬥中的回复，在1V1中輕鬆取勝。
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/TyWarm/2021/06/10/work_5/#more" title="流光 | 魂寂斷死生，可輔助可輸出！培養介紹">繼續閱讀 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
                     </footer>
                 </div>
             </article>
@@ -356,6 +359,10 @@
                     </div>
                 
                 
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
                 
             </div>
             <div class="box gotop-box">
@@ -399,6 +406,11 @@
 <script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 <script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script>
 
+    <div>
+        <canvas id="snow"></canvas>
+        <script async type="text/javascript" src="/TyWarm/js/snow.min.js"></script>
+    </div>
+
 <script async src="/TyWarm/js/candy.min.js"></script>
 
 
@@ -408,6 +420,8 @@
 <script defer src="/TyWarm/js/kratosr.min.js"></script>
 <script defer src="/TyWarm/js/pjax.min.js"></script>
 
+
+    <script defer src="/TyWarm/js/kr-dark.min.js"></script>
 
 
 
