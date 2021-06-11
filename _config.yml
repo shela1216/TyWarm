@@ -104,7 +104,7 @@ plugins:
     sourceComments: false
 
 ## Themes: https://hexo.io/themes/
-theme: kratos-rebirth
+theme: theme_custom
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -1,0 +1,67 @@
+        <% if (page.type !== '404' && theme.sidebar === 'right') { %>
+            <%- partial('_partial/sidebar') %>
+        <% } %>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer" <% if (theme.aplayer.enabled) { %> class="ap-lrc" <% } %> >
+        <div class="kr-tool text-center">
+            <div class="tool">
+                <% if (theme.search.enable) { %>
+                    <div class="box search-box">
+                        <a href="<%- config.root %>search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                <% } %>
+                <% if (theme.enable_dark) { %>
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                <% } %>
+                <% if (theme.group_link) { %>
+                    <div class="box group-box">
+                        <a href="<%- theme.group_link %>" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
+                <% } %>
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <% if (theme.contact.weibo) {%><li><a target="_blank" rel="nofollow" href="https://weibo.com/u/<%- theme.contact.weibo %>"><i class="fa fa-weibo"></i></a></li><% } %>
+                        <% if (theme.contact.mail) {%><li><a href="mailto:<%- theme.contact.mail %>"><i class="fa fa-envelope"></i></a></li><% } %>
+                        <% if (theme.contact.telegram) {%><li><a target="_blank" rel="nofollow" href="https://t.me/<%- theme.contact.telegram %>"><i class="fa fa-telegram"></i></a></li><% } %>
+                        <% if (theme.contact.twitter) {%><li><a target="_blank" rel="nofollow" href="https://twitter.com/<%- theme.contact.twitter %>"><i class="fa fa-twitter"></i></a></li><% } %>
+                        <% if (theme.contact.facebook) {%><li><a target="_blank" rel="nofollow" href="https://www.facebook.com/<%- theme.contact.facebook %>"><i class="fa fa-facebook-official"></i></a></li><% } %>
+                        <% if (theme.contact.linkedin) {%><li><a target="_blank" rel="nofollow" href="https://cn.linkedin.com/in/<%- theme.contact.linkedin %>"><i class="fa fa-linkedin-square"></i></a></li><% } %>
+                        <% if (theme.contact.fediverse.username) {%><li><a target="_blank" rel="me" href="https://<%- theme.contact.fediverse.instance %>/@<%- theme.contact.fediverse.username %>"><i class="fa fa fa-share-alt-square"></i></a></li><% } %>
+                        <% if (theme.contact.github) {%><li><a target="_blank" rel="nofollow" href="https://github.com/<%- theme.contact.github %>"><i class="fa fa-github"></i></a></li><% } %>
+                        <% if (theme.contact.rss) {%><li><a target="_blank" rel="nofollow" href="<%- config.root + theme.contact.rss %>"><i class="fa fa-rss"></i></a></li><% } %>
+                        <% if (theme.contact.qrcode) {%><li><a target="_blank" rel="nofollow" href="<%- theme.contact.qrcode %>"><i class="fa fa-qrcode"></i></a></li><% } %>
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; <%- date(new Date(), 'YYYY') %> <%- config.title || config.author %> <%- __('copyright') %>.</li>
+                        </div>
+                        <div>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by <%- config.author %>.</li>
+                        </div>
+                        <div>
+                            <li>遊戲相關的圖片版權歸遊戲版權方所有，本站僅做整理，方便玩家查閱。</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
