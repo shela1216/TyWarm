@@ -4,7 +4,7 @@
 
 # Site
 title: 天諭WIKI
-subtitle: '天諭手遊台港澳攻略網'
+subtitle: '天諭手遊台港澳版攻略'
 description: '各種天諭相關攻略整理'
 keywords: 天諭,天諭手遊
 author: 咪歐兔
@@ -102,6 +102,7 @@ plugins:
     outputStyle: nested
     precision: 5
     sourceComments: false
+
 ## Themes: https://hexo.io/themes/
 theme: kratos-rebirth
 
@@ -109,5 +110,9 @@ theme: kratos-rebirth
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy: 
     type: git
-    repo: https://shela1216.github.io/TyWarm/ #簡單來說就是你的倉庫網址
-    branch: master
+    repo: https://github.com/shela1216/TyWarm.git #簡單來說就是你的倉庫網址
+    branch: gh-pages
+search:
+  path: search.json
+  field: all
+  format: html
