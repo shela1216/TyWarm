@@ -315,8 +315,6 @@
     .arc-tags a {
       -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
       box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-      border: 1px solid #fff;
-      border-radius: 15px;
       margin: 4px 8px 0 0;
       font-weight: 500;
       display: inline-block;
@@ -324,8 +322,37 @@
       background: rgba(255, 255, 255, .5);
       font-size: 16px;
     }
-    .arc-tags a::before{content:"● ";color:#e8a6a6}
+    .arc-tag-list{
+      margin: 0px;
+      padding-left: 0px;
+    }
+    .arc-tag-list-item {
+      list-style-type: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
+    .arc-tag-list-link::before {
+      content: "\f114";
+      font-family: fontawesome;
+      color: #e8a6a6;
+      margin-right: 10px;
+    }
+
+    .arc-tag-list-count {
+      margin-right: 20px;
+      border-radius: 6px;
+      width: 2em;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .arc-tag-list-count::before{
+      content: "( ";
+    }
+    .arc-tag-list-count::after{
+      content: " )";
+    }
   </style>
   <article>
     <div class="kratos-hentry kratos-post-inner clearfix">
@@ -334,17 +361,17 @@
           分類目錄
         </h2>
         <div id="archives">
-          <div class="post-block archive post" style="margin-left: 2em;">
-            <h3 class="archive-page-counter">
-              當前共有 6 個分類  ~
-            </h3>
-            <div class="posts-collapse">
-              
-                <div class="arc-tags">
-                  <a class="category-link" href="/TyWarm/categories/%E5%86%92%E9%9A%AA%E4%BC%91%E9%96%92%E6%94%BB%E7%95%A5/">冒險休閒攻略<span class="category-count">2</span></a> <a class="category-link" href="/TyWarm/categories/%E5%9F%B9%E9%A4%8A%E6%94%BB%E7%95%A5/">培養攻略<span class="category-count">7</span></a> <a class="category-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/">活動副本<span class="category-count">6</span></a> <a class="category-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/%E5%9B%B0%E9%9B%A3/">困難<span class="category-count">1</span></a> <a class="category-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/%E5%BC%92%E7%A5%9E/">弒神<span class="category-count">2</span></a> <a class="category-link" href="/TyWarm/categories/%E8%81%B7%E6%A5%AD%E6%94%BB%E7%95%A5/">職業攻略<span class="category-count">5</span></a>
-                </div>
+          <div class="post-block archive post">
 
+            <div class="widget widget-kratos-categories clearfix">
+              
+                <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+                  <ul class="arc-tag-list"><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E5%86%92%E9%9A%AA%E4%BC%91%E9%96%92%E6%94%BB%E7%95%A5/">冒險休閒攻略</a><span class="arc-tag-list-count">2</span></li><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E5%9F%B9%E9%A4%8A%E6%94%BB%E7%95%A5/">培養攻略</a><span class="arc-tag-list-count">7</span></li><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/">活動副本</a><span class="arc-tag-list-count">6</span><ul class="arc-tag-list-child"><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/%E5%9B%B0%E9%9B%A3/">困難</a><span class="arc-tag-list-count">1</span></li><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E6%B4%BB%E5%8B%95%E5%89%AF%E6%9C%AC/%E5%BC%92%E7%A5%9E/">弒神</a><span class="arc-tag-list-count">2</span></li></ul></li><li class="arc-tag-list-item"><a class="arc-tag-list-link" href="/TyWarm/categories/%E8%81%B7%E6%A5%AD%E6%94%BB%E7%95%A5/">職業攻略</a><span class="arc-tag-list-count">5</span></li></ul>
+                </aside>
                 
+            </div>
+            <div class="posts-collapse">
+
             </div>
 
 
@@ -354,7 +381,6 @@
     </div>
   </article>
 </section>
-
 
                 
             
