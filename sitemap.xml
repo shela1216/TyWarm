@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shela1216.github.io/TyWarm/2021/06/11/fate/</loc>
+    
+    <lastmod>2021-06-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shela1216.github.io/TyWarm/2021/06/09/work_1/</loc>
     
     <lastmod>2021-06-11</lastmod>
@@ -446,6 +453,20 @@
   
   <url>
     <loc>https://shela1216.github.io/TyWarm/tags/%E5%9B%B0%E9%9B%A3/</loc>
+    <lastmod>2021-06-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shela1216.github.io/TyWarm/tags/%E6%A9%9F%E7%B7%A3/</loc>
+    <lastmod>2021-06-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shela1216.github.io/TyWarm/tags/%E4%BA%BA%E6%A0%BC%E7%B3%BB%E7%B5%B1/</loc>
     <lastmod>2021-06-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
