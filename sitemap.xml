@@ -431,20 +431,6 @@
   </url>
   
   <url>
-    <loc>https://shela1216.github.io/TyWarm/tags/%E7%8E%89%E8%99%9B/</loc>
-    <lastmod>2021-06-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shela1216.github.io/TyWarm/tags/%E6%B3%95%E5%B8%AB/</loc>
-    <lastmod>2021-06-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shela1216.github.io/TyWarm/tags/%E5%85%89%E5%88%83/</loc>
     <lastmod>2021-06-12</lastmod>
     <changefreq>daily</changefreq>
@@ -453,6 +439,20 @@
   
   <url>
     <loc>https://shela1216.github.io/TyWarm/tags/%E9%80%B2%E6%88%B0%E8%BC%B8%E5%87%BA/</loc>
+    <lastmod>2021-06-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shela1216.github.io/TyWarm/tags/%E7%8E%89%E8%99%9B/</loc>
+    <lastmod>2021-06-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shela1216.github.io/TyWarm/tags/%E6%B3%95%E5%B8%AB/</loc>
     <lastmod>2021-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
