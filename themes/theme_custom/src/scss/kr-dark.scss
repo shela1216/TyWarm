@@ -4,13 +4,12 @@
 */
 
 @charset "UTF-8";
-
 /******************* Default ********************/
 :root {
     --banner-image: url('../images/header.png');
     --about-image: url('../images/about.png');
     --background-image: url('../images/bg2.png');
-
+    --background-image-m: url('../images/bg2_M.png');
     --select-text: #fcfcfc;
     --select-text-bg: #262a30;
     --text: #000;
@@ -21,17 +20,16 @@
     --tag-background: #fffd;
     --card-background: rgba(255, 255, 255, .8);
     --page-background: #f5f5f5;
-    --info-background: #efefefaa;
-    --navbar-desktop: rgba(40, 42, 44, .6);
     --navbar-mobile: rgba(22, 23, 26, .9);
+    --navbar-desktop: #181c27cc;
 }
 
 /******************* Theme ********************/
 @mixin dark-mode {
     --banner-image: url('../images/header.png');
     --background-image: url('../images/bg.png');
+    --background-image-m: url('../images/bg_M.png');
     /* --background-image: none; */
-
     --select-text: #333;
     --select-text-bg: #ccc;
     --text: #eee;
@@ -46,12 +44,27 @@
     --navbar-desktop: #181c27cc;
 }
 
+@mixin w768-1 {
+    @media (max-width:767px){
+        background-image: url('../images/bg.png');
+    }
+  }
+  
 @media (prefers-color-scheme: dark) {
 
     :root:not([data-user-color-scheme]) {
         @include dark-mode;
     }
+
+    body {
+        background-image: var(--background-image);
+    }
+
+
+
 }
+
+
 
 [data-user-color-scheme='dark'] {
     @include dark-mode;
@@ -91,7 +104,7 @@ ul {
 
 body {
     background-color: var(--page-background);
-    background-image: url(--background-image);
+    background-image: var(--background-image);
 }
 
 h2.title-h2 {
@@ -364,12 +377,17 @@ span.mjx-chtml.MJXc-display {
     color: var(--text);
 }
 
-
-
 /******************* Images ********************/
 @media(min-width:768px) {
+
+
     body.custom-background {
-        background-image: var(--background-image);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    body.custom-background::before{
+        display: none;
     }
 
     .kratos-cover.kratos-cover-2 {
@@ -379,4 +397,42 @@ span.mjx-chtml.MJXc-display {
     .widget-kratos-about .photo-background {
         background-image: var(--about-image);
     }
+}
+
+.popular-posts-title a{
+    color: var(--text-alt);
+    
+  &:hover {
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: #51aded;
+  }
+}
+
+@media(max-width:767px) {
+    body.custom-background {
+        background-image: none;
+        background-attachment: inherit;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    body.custom-background::before{
+        content: ' ';
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // background-image: var(--background-image-m);
+        // background-position: center 0;
+        // background-repeat:  no-repeat;
+        background-size: cover; 
+        display: block;
+    }
+}
+
+body.custom-background::before{
+    background: url('../images/bg_M.png') center 0 no-repeat;
 }

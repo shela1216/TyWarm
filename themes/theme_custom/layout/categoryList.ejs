@@ -157,8 +157,6 @@
     .arc-tags a {
       -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
       box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-      border: 1px solid #fff;
-      border-radius: 15px;
       margin: 4px 8px 0 0;
       font-weight: 500;
       display: inline-block;
@@ -166,8 +164,37 @@
       background: rgba(255, 255, 255, .5);
       font-size: 16px;
     }
-    .arc-tags a::before{content:"● ";color:#e8a6a6}
+    .arc-tag-list{
+      margin: 0px;
+      padding-left: 0px;
+    }
+    .arc-tag-list-item {
+      list-style-type: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
+    .arc-tag-list-link::before {
+      content: "\f114";
+      font-family: fontawesome;
+      color: #e8a6a6;
+      margin-right: 10px;
+    }
+
+    .arc-tag-list-count {
+      margin-right: 20px;
+      border-radius: 6px;
+      width: 2em;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .arc-tag-list-count::before{
+      content: "( ";
+    }
+    .arc-tag-list-count::after{
+      content: " )";
+    }
   </style>
   <article>
     <div class="kratos-hentry kratos-post-inner clearfix">
@@ -176,23 +203,27 @@
           <%- __('categories') %>
         </h2>
         <div id="archives">
-          <div class="post-block archive post" style="margin-left: 2em;">
-            <h3 class="archive-page-counter">
-              <%- __('category_count', ()=> {
+          <div class="post-block archive post">
 
-                return site.categories.length;
-                }) %>
-            </h3>
-            <div class="posts-collapse">
+            <div class="widget widget-kratos-categories clearfix">
               <% if (site.categories.length){ %>
-                <div class="arc-tags">
-                  <%- list_categories( { show_count: true, style: 'none',separator: ' ' }) %>
-                </div>
-
+                <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+                  <%- list_categories({show_count: true, class: 'arc-tag' }) %>
+                </aside>
                 <% } %>
             </div>
-
-
+            <h2 class="title-h2 text-center">
+              <%- __('tagcloud') %>
+            </h2>
+            <% if (site.tags.length){ %>
+              <div class="arc-tags">
+                  <%- list_tags({
+                    show_count: false, 
+                    style: 'none',
+                    separator: ' '
+                  }) %>
+              </div>
+            <% } %>
           </div>
         </div>
       </div>

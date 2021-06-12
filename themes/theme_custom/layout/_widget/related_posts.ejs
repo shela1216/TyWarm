@@ -1,0 +1,13 @@
+<% if (page.related_posts && page.related_posts.length > 0) { %>
+    <section>
+        <h2>相關文章</h2>
+        <ul>
+        <% for (const path of page.related_posts) { %>
+            <% const url = url_for(path) %>
+            <% if (url) { %>
+                <li><a href="<%= url %>"><%= url %></a></li>
+            <% } %>
+        <% } %>
+        </ul>
+    </section>
+<% } %>

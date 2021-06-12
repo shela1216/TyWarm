@@ -91,6 +91,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   -webkit-text-size-adjust: none;
+  background-size: cover;
+  background-position: left center;
 }
 
 a {
@@ -2957,12 +2959,32 @@ span.mjx-chtml.MJXc-display {
 
 body.custom-background {
   background-size: cover;
-  background-attachment: fixed;
-  background-image: url('../images/bg2.png');
+  // background-attachment: fixed;
+  // background-image: url('../images/bg2.png');
 }
 
 @media(min-width:768px) {
   body.custom-background {
-    background-image: url('../images/bg2.png');
+    // background-image: url('../images/bg2.png');
   }
+  .popular-posts {
+    li {
+      width: 20%;
+    }
+  }
+}
+
+.popular-posts {
+  li{
+    width: 100%;
+  }
+}
+
+div.related-posts-item-abstract {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(136, 136, 136);
+  margin-bottom: 10px;
+  font-size: 85%;
 }

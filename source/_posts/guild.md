@@ -1,6 +1,8 @@
 ---
 title: 超詳細公會貢獻獲取攻略
-categories: 培養攻略
+categories: 
+- 培養攻略
+- 公會
 toc: true
 tags:
 - 公會貢獻

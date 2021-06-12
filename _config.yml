@@ -103,6 +103,7 @@ plugins:
     precision: 5
     sourceComments: false
 
+
 ## Themes: https://hexo.io/themes/
 theme: theme_custom
 
@@ -116,3 +117,14 @@ search:
   path: search.json
   field: all
   format: html
+
+related_posts:
+  enable: true #开启
+  title: # custom header, leave empty to use the default one
+  display_in_home: false #显示在首页
+  params:
+    maxCount: 5
+    #PPMixingRate: 0.0
+    #isDate: false
+    #isImage: false
+    #isExcerpt: false
