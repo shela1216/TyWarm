@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tywarm.shela-pro.net/2021/06/13/music/</loc>
+    
+    <lastmod>2021-06-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tywarm.shela-pro.net/2021/06/10/peop/</loc>
     
     <lastmod>2021-06-13</lastmod>
@@ -663,6 +670,20 @@
   
   <url>
     <loc>https://tywarm.shela-pro.net/tags/SSR/</loc>
+    <lastmod>2021-06-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tywarm.shela-pro.net/tags/%E9%9F%B3%E8%BB%8C/</loc>
+    <lastmod>2021-06-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tywarm.shela-pro.net/tags/%E5%86%92%E9%9A%AA/</loc>
     <lastmod>2021-06-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
