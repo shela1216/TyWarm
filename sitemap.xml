@@ -747,4 +747,11 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://tywarm.shela-pro.net/categories/%E5%86%92%E9%9A%AA%E4%BC%91%E9%96%92%E6%94%BB%E7%95%A5/%E5%86%92%E9%9A%AA/</loc>
+    <lastmod>2021-06-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 </urlset>
