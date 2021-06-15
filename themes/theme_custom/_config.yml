@@ -123,9 +123,9 @@ avatarUri: images/avatar.png
 fancybox: true
 # favicon
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon.ico
-  apple_touch_icon: /images/apple-touch-icon.png
+  small: images/favicon-16x16.png
+  medium: images/favicon.ico
+  apple_touch_icon: images/apple-touch-icon.png
   
 # Search 搜索
 search:
@@ -157,7 +157,7 @@ jsconfig:
 
 # Site verify 站点验证相关配置内容
 site_verify:
-  google: 
+  google: jSoPcNYYF1B9wL02GBGffrfIK1YTnfDR6E_wwmBBs7I
   baidu: 
   bing: 
 

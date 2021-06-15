@@ -25,19 +25,19 @@ window.cancelIdleCallback = window.cancelIdleCallback || function(id) {
 };
 
 (()=>{
-    // const loadConfig = (cb) => {
-    //     // 读取配置文件
-    //     fetch('../config/main.json')
-    //         .then((res) => {
-    //             return res.json();
-    //         })
-    //         .then((cfg) => {
-    //             kr = cfg;
-    //         })
-    //         .then(()=>{
-    //             cb();
-    //         });
-    // };
+    const loadConfig = (cb) => {
+        // 读取配置文件
+        fetch('/config/main.json')
+            .then((res) => {
+                return res.json();
+            })
+            .then((cfg) => {
+                kr = cfg;
+            })
+            .then(()=>{
+                cb();
+            });
+    };
     const pageScrollDownInit = ()=>{
         let isScrolledDown = false;
         const pageScrollDownClass = () => {
@@ -608,7 +608,7 @@ ${kr.copyrightNotice}
     const funcUsingConfig = () => {
         // 因为涉及到配置文件，所以这些是只有在完成配置加载后才能调用的函数
         pjaxReload();
-
+        loadConfig();
         copyEventInit();
         leaveEventInit();
         initTime();
