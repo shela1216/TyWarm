@@ -1,3 +1,9 @@
+<style>
+    .sticky-area img{
+        width: 100%;
+        height: auto;
+    }
+</style>
 <% const needSplit = theme.widgets.includes('splitter') && (is_post() || is_page()); %>
 <% const showToc = page.toc && strip_html(toc(page.content)); %>
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
@@ -22,5 +28,6 @@
             <% break;
         }
     }) %>
+
     </div>
 </section>

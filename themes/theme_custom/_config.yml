@@ -26,9 +26,11 @@ menu:
   sites:
     submenu: true
     fb: https://www.facebook.com/icantw.TY
+    index: https://ty.icantw.com/
     baha: https://forum.gamer.com.tw/A.php?bsn=70946
     ds: https://ds.163.com/square/5cde5501d545683c1b49ac67/?type=%E7%83%AD%E9%97%A8%E6%8E%A8%E8%8D%90
     line: https://line.me/ti/g2/wYbF7MMXhFk2gMkciACKCw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default
+    donate: https://www.laigame.store/product/%E5%A4%A9%E8%AB%AD/r/191/?campaign=%E5%A4%A9%E8%AB%AD
 
 label:
   index: <i class="fa fa-home"></i>首頁
@@ -41,9 +43,11 @@ label:
   sites:
     submenu: <i class="fa fa-link"></i>友站連結
     fb: 天諭粉絲團
+    index: 天諭官網
     baha: 巴哈天諭版
     ds: 天諭網易大神
     line: 天諭line社群
+    donate: 天諭代儲服務
 
 # Footer 页脚配置
 group_link: 
@@ -181,12 +185,16 @@ friends:
     link: "https://forum.gamer.com.tw/A.php?bsn=70946"
   - name: "天諭手遊台港澳官網"
     bio: ""
-    link: "https://www.icantw.com/event/TyWarm"
+    link: "https://ty.icantw.com/"
     avatar: "../images/logo_2.png"
   - name: "天諭手遊Line討論社群"
     bio: ""
     avatar: "https://i.imgur.com/KQsGrBO.jpg"
     link: "https://line.me/ti/g2/wYbF7MMXhFk2gMkciACKCw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+  - name: "天諭代儲服務"
+    bio: ""
+    link: "https://www.laigame.store/product/%E5%A4%A9%E8%AB%AD/r/191/?campaign=%E5%A4%A9%E8%AB%AD"
+    avatar: "../images/logo_2.png"
   # - name: "尚品代儲"
   #   bio: "123456"
   #   avatar: "../images/avatar.png"

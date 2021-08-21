@@ -1,12 +1,31 @@
 <section class="col-md-8">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <h2 class="title-h2 text-center"><%- __('search') %></h2>
+            <h2 class="title-h2 text-center">
+                <%- __('search') %>
+            </h2>
             <form class="input-group" onsubmit="return inpSearch();">
-                <input class="form-input input-lg" id="search-input" maxlength="80" name="s" placeholder="<%- __('search_notice') %>" required type="search">
-                <button class="btn btn-primary" type="submit"><%- __('search_submit') %></button>
+                <input class="form-input input-lg" id="search-input" maxlength="80" name="s"
+                    placeholder="<%- __('search_notice') %>" required type="search">
+                <button class="btn btn-primary" type="submit">
+                    <%- __('search_submit') %>
+                </button>
             </form>
+            <a href="https://www.laigame.store/product/%E5%A4%A9%E8%AB%AD/r/191/?campaign=%E5%A4%A9%E8%AB%AD"
+            target="_blank"> <img src="https://i.imgur.com/3rdMYeb.gif" alt=""></a>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 工商服務 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6405825983604772"
+                 data-ad-slot="7417021405"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
+
     </div>
 
     <div class="alert alert-info" id="kr-search-notice">
@@ -16,24 +35,16 @@
     <div id="result-posts">
         <div class="kratos-hentry kratos-post-inner clearfix">
             <div class="kratos-post-content">
-                <p><%- __('search_notice_keys', strip_html(list_tags({
-                    orderby: 'date',
-                    show_count: false,
-                    style: 'none',
-                    separator: ' ',
-                    amount: 3
-                }))) %></p>
-                <p><%- __('search_notice_tags') %></p>
+                <p>
+                    <%- __('search_notice_keys', strip_html(list_tags({ orderby: 'date' , show_count: false,
+                        style: 'none' , separator: ' ' , amount: 3 }))) %>
+                </p>
+                <p>
+                    <%- __('search_notice_tags') %>
+                </p>
                 <p class="search-demo-tags">
-                    <%- tagcloud({
-                        orderby: 'date',
-                        min_font: 18, 
-                        max_font: 24,
-                        unit: 'px',
-                        color: true,
-                        start_color: '#b2b7be',
-                        end_color: '#6c7588'
-                    }) %>
+                    <%- tagcloud({ orderby: 'date' , min_font: 18, max_font: 24, unit: 'px' , color: true,
+                        start_color: '#b2b7be' , end_color: '#6c7588' }) %>
                 </p>
             </div>
         </div>
